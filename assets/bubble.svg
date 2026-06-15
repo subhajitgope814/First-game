@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <radialGradient id="bubbleFill" cx="32%" cy="28%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity=".98"/>
+      <stop offset="35%" stop-color="#e6fbff" stop-opacity=".95"/>
+      <stop offset="68%" stop-color="#84defe" stop-opacity=".62"/>
+      <stop offset="100%" stop-color="#2d8cff" stop-opacity=".25"/>
+    </radialGradient>
+    <radialGradient id="shine" cx="28%" cy="28%" r="58%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity=".95"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#35b8ff" flood-opacity=".25"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <circle cx="64" cy="64" r="42" fill="url(#bubbleFill)" stroke="#ffffff" stroke-opacity=".85" stroke-width="5"/>
+    <ellipse cx="48" cy="46" rx="15" ry="20" fill="url(#shine)" opacity=".95"/>
+    <circle cx="43" cy="41" r="7" fill="#ffffff" opacity=".7"/>
+    <path d="M35 71 C39 56 52 48 64 48 C77 48 89 56 93 71" fill="none" stroke="#ffffff" stroke-opacity=".45" stroke-width="4" stroke-linecap="round"/>
+    <path d="M58 100 C62 108 69 108 73 100" fill="none" stroke="#ffffff" stroke-opacity=".5" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

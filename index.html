@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endless Runner Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="top-bar">
+            <div class="score-display">
+                <span class="label">Score:</span>
+                <span class="score" id="score">0</span>
+            </div>
+            <h1 class="title">RUNNER RUSH</h1>
+            <div class="high-score-display">
+                <span class="label">High Score:</span>
+                <span class="high-score" id="highScore">0</span>
+            </div>
+        </div>
+
+        <canvas id="gameCanvas" width="800" height="400"></canvas>
+
+        <div class="game-ui">
+            <button class="btn start-btn" id="startBtn">START GAME</button>
+            <button class="btn pause-btn" id="pauseBtn" style="display:none;">PAUSE</button>
+            <p class="instruction">Use ARROW KEYS or A/D to move | SPACE to jump | Collect bubbles for points</p>
+        </div>
+
+        <div class="game-over-screen" id="gameOverScreen">
+            <h2>GAME OVER!</h2>
+            <p>Final Score: <span id="finalScore">0</span></p>
+            <p>High Score: <span id="finalHighScore">0</span></p>
+            <button class="btn restart-btn" id="restartBtn">PLAY AGAIN</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
