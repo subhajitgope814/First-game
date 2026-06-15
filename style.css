@@ -77,9 +77,15 @@ body {
 
 .game-ui {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
 }
 
 .instruction {
+    width: 100%;
     color: #00d4ff;
     font-size: 12px;
     margin-top: 10px;
@@ -125,6 +131,21 @@ body {
 }
 
 .pause-btn:active {
+    transform: scale(0.98);
+}
+
+.jump-btn {
+    background: linear-gradient(135deg, #8b5cf6, #6366f1);
+    color: white;
+    box-shadow: 0 5px 15px rgba(139, 92, 246, 0.35);
+}
+
+.jump-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(139, 92, 246, 0.55);
+}
+
+.jump-btn:active {
     transform: scale(0.98);
 }
 

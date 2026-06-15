@@ -2,6 +2,7 @@ const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 const startBtn = document.getElementById('startBtn');
 const restartBtn = document.getElementById('restartBtn');
+const jumpBtn = document.getElementById('jumpBtn');
 const gameOverScreen = document.getElementById('gameOverScreen');
 const scoreDisplay = document.getElementById('score');
 const highScoreDisplay = document.getElementById('highScore');
@@ -607,6 +608,8 @@ pauseBtn.addEventListener('click', togglePause);
 restartBtn.addEventListener('click', () => {
     startGame();
 });
+
+jumpBtn.addEventListener('click', jumpPlayer);
 
 // Initialize
 updateHud();
